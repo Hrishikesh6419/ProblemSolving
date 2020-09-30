@@ -16,14 +16,19 @@ public class _2Stack1Queue {
         push(3);
         push(4);
         push(5);
+        printQueue();
         push(6); //overflow
-        pop(); //1
-        pop(); //2
-        pop(); //3
-        pop(); //4
-        pop(); //5
         pop();
-//
+        printQueue();
+        pop();
+        printQueue();
+        push(6);
+        printQueue();
+        pop();pop();pop();
+        printQueue();
+        pop();
+        printQueue();
+
 
     }
 
@@ -37,6 +42,23 @@ public class _2Stack1Queue {
             stack1[top1] = i;
             System.out.println("Pushed " + stack1[top1]);
         }
+    }
+
+    private static void printQueue(){
+        if (top2 != -1){
+
+            for(int i = top2; i != -1; i--){
+                System.out.print(stack2[i] +"->");
+            }
+        }
+        if (top1 != -1){
+
+            for(int i = 0; i <= top1; i++){
+                System.out.print(stack1[i] +"->");
+            }
+        }
+        System.out.println();
+
     }
 
     private static void pop() {
