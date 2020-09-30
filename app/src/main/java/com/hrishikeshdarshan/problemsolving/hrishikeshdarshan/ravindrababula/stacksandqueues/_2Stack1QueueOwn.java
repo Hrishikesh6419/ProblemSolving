@@ -1,7 +1,7 @@
 package com.hrishikeshdarshan.problemsolving.hrishikeshdarshan.ravindrababula.stacksandqueues;
 
 //Implement 1 queue using 2 stacks
-public class _2Stack1Queue {
+public class _2Stack1QueueOwn {
 
     static int[] stack1 = new int[5];
     static int[] stack2 = new int[5];
